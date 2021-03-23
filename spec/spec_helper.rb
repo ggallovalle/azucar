@@ -10,5 +10,7 @@ RSpec.configure do |config|
 
   config.expect_with :rspec do |c|
     c.syntax = :expect
+    # see https://relishapp.com/rspec/rspec-expectations/v/3-10/docs/built-in-matchers/predicate-matchers#the-config-%60strict-predicate-matchers%60-impacts-matching-of-results-other-than-%60true%60-and-%60false%60
+    c.strict_predicate_matchers = true
   end
 end
