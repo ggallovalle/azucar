@@ -1,5 +1,3 @@
-require "azucar/false_mocks"
-
 RSpec.describe Azucar::FalseMocks do
   context described_class::Controller do
     describe '#get' do

@@ -1,5 +1,3 @@
-require 'azucar/inheritance'
-
 RSpec.describe Azucar::Inheritance do
   # NOTE instead of Azucar::Inheritance::A, use 'described_class'
   #   https://github.com/rspec/rspec-core#described_class

@@ -1,5 +1,3 @@
-require_relative '../../lib/azucar/daily_summary'
-
 RSpec.describe Azucar::DailySummary do
   it 'calls send email method' do
     # Arrange

@@ -1,4 +1,9 @@
-require "azucar/version"
+# frozen_string_literal: true
+
+require 'zeitwerk'
+
+loader = Zeitwerk::Loader.for_gem
+loader.setup
 
 module Azucar
   class Error < StandardError; end
@@ -9,7 +14,7 @@ end
 #   def self.method_added(method_name)
 #     puts "Adding #{method_name.inspect}"
 #   end
-#   def self.some_class_method() 
+#   def self.some_class_method()
 #     puts 'some_class_method'
 #   end
 #   def some_instance_method()

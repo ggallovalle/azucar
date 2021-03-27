@@ -1,10 +1,8 @@
-require 'azucar/password'
-
-RSpec.describe Azucar::PasswordValidator do
+RSpec.describe Azucar::PasswordValidator::PasswordValidator do
   before do
-    allow(Azucar::Acme::Config).to receive(:min_password_lenght).and_return(8)
+    allow(Azucar::PasswordValidator::Config).to receive(:min_password_length).and_return(8)
   end
-  subject { Azucar::PasswordValidator.new }
+  subject { Azucar::PasswordValidator::PasswordValidator.new }
   # NOTE: Use test doubles to decouple from configuration rules, validation
   # and other ever changing specifics of the app.
   # This test will continue to pass no matter how many times we change the configuration
